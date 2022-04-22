@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_tes/app/routes/app_pages.dart';
 import 'package:get/get.dart';
 
 import '../controllers/login_controller.dart';
@@ -98,7 +99,7 @@ class LoginView extends GetView<LoginController> {
                 TextAccount(
                   account: "Don't have account?.",
                   textButton: 'sign Up',
-                  onPressed: () {},
+                  onPressed: () => Get.toNamed(Routes.SIGN_UP),
                 ),
                 const SizedBox(height: 50),
               ],

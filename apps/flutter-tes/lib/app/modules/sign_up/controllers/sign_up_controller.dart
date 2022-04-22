@@ -1,7 +1,12 @@
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class SignUpController extends GetxController {
-  //TODO: Implement SignUpController
+  var usernameC = TextEditingController();
+  var emailC = TextEditingController();
+  var passwordC = TextEditingController();
+
+  final isChecked = false.obs;
 
   final count = 0.obs;
   @override
