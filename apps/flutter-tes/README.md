@@ -1,6 +1,6 @@
 # flutter_tes
 
-tes flutter.
+tes flutter Rama Ismaya Sofyan
 
 ## Getting Started
 
