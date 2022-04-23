@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class InputDaftar extends StatelessWidget {
-  // final String label;
   final TextEditingController controller;
   final String? Function(String?)? validator;
   final String hint;

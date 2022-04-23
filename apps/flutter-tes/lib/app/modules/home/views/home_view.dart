@@ -9,6 +9,12 @@ class HomeView extends GetView<HomeController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back_ios),
+          onPressed: () {
+            controller.logout();
+          },
+        ),
         title: Text('HomeView'),
         centerTitle: true,
       ),

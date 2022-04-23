@@ -60,6 +60,7 @@ class LoginView extends GetView<LoginController> {
                   controller: controller.passwordC,
                   hint: 'at least 8 characters',
                   label: 'Password',
+                  isPassword: true,
                 ),
                 const SizedBox(height: 10),
                 Row(
@@ -93,7 +94,10 @@ class LoginView extends GetView<LoginController> {
                 const SizedBox(height: 20),
                 Button(
                   name: 'Login',
-                  onPressed: () {},
+                  onPressed: () {
+                    controller.login(controller.usernameC.text.toString(),
+                        controller.passwordC.text.toString());
+                  },
                 ),
                 const SizedBox(height: 50),
                 TextAccount(
